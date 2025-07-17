@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+.caja_padre {
+    width: 1200px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.caja_hijo {
+    width: 160px;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+}
+
+.color1 { background-color: #ff4d4d; }    /* rojo */
+.color2 { background-color: #4d79ff; }    /* azul */
+.color3 { background-color: #4dff88; }    /* verde menta */
+.color4 { background-color: #ff9933; }    /* naranja */
+.color5 { background-color: #b84dff; }    /* morado */
+.color6 { background-color: #4dd2ff; }    /* celeste */
+.color7 { background-color: #ffd24d; }    /* amarillo suave */
+.color8 { background-color: #ff66cc; }    /* rosado */
+.color9 { background-color: #99ffcc; }    /* verde pastel */
+.color10 { background-color: #6666ff; }   /* azul violeta */
+.color11 { background-color: #cc3300; }   /* rojo quemado */
+.color12 { background-color: #339966; }   /* verde oscuro */
+.color13 { background-color: #9999ff; }   /* lavanda */
+.color14 { background-color: #ffcc00; }   /* dorado */
+.color15 { background-color: #996633; }   /* marrón */
+
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right;
+}
+
+.restaurar {
+    clear: both;
+}
+
+a {
+    margin-top: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #192dda;
+    text-align: center;
+    display: block;
+    width: 100px;
+}   

@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../img/paisaje.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.613); 
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    color: #ff4e92;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.student-name {
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+.section-title {
+    font-size: 24px;
+    color: yellow;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.section-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 30px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    border-radius: 2px;
+}
+
+.casos-title::before {
+    background: linear-gradient(45deg, #ff9a9e, #fecfef);
+}
+
+.paginas-title::before {
+    background: linear-gradient(45deg, #a8edea, #fed6e3);
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+.link-card {
+    background: #111;
+    color: #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.link-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(45deg, #ff9a9e, #fecfef);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.paginas-section .link-card::before {
+    background: linear-gradient(45deg, #a8edea, #fed6e3);
+}
+
+.link-card:hover::before {
+    transform: scaleX(1);
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.link-card a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: 600;
+    font-size: 16px;
+    display: block;
+}
+
+.link-card:hover a {
+    color: #7fa4f6;
+}
+
+.casos-section .link-card {
+    border-left: 3px solid #ff9a9e;
+}
+
+.paginas-section .link-card {
+    border-left: 3px solid #a8edea;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    .header h1 {
+        font-size: 2em;
+    }
+    .links-grid {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 10px;
+    }
+}
